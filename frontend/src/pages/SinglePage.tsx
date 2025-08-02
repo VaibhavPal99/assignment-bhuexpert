@@ -38,7 +38,7 @@ function SinglePage() {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const res = await fetch(`http://localhost:3000/api/posts/${id}`);
+                const res = await fetch(`https://assignment-bhuexpert.onrender.com/api/posts/${id}`);
                 const data = await res.json();
                 setPost(data);
             } catch (error) {

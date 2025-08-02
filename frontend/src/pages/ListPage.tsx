@@ -28,7 +28,7 @@ function ListPage() {
   useEffect(() => {
     const fetchPosts = async () => {
       const queryString = searchParams.toString();
-      const res = await fetch(`http://localhost:3000/api/posts?${queryString}`);
+      const res = await fetch(`https://assignment-bhuexpert.onrender.com/api/posts?${queryString}`);
       const data = await res.json();
       
       setPosts(data);
